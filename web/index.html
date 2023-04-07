@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>OneByTen Predictors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+   
+     <!-- FONT AWESOME -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                <img class="navbarkiimage" src="images/logo.jpeg" alt="logo">
+                <a class="navbar-brand ps-2" href="#">OneByTen Predictors</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DASHBOARD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section>
+        <div id="home" class="bg-inner low-back-gradient-inner">
+            <!-- <div class="text-con-inner low-back-up"> -->
+            <!-- <div class="container"> -->
+            <!-- <div style="padding-top: 40px" class="row"> -->
+            <!-- <div class="lead col-lg-12 col-xm-12 text-center"> -->
+            <h1><span class="predict-heading">PREDICT THE FUTURE</span> </h1>
+            <!-- <div class="list-o-i white"> -->
+            <!-- <p class="white no-p"></p> -->
+            <!-- <div class="pagenation_links"><a href="index.html" class="yellow"><br></a><i> </i></div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </section>
+    <section>
+        <form class="login" action="{{ url_for('insertintotable') }}" method="POST">
+            <div class="login_title">
+                <h2>PLEASE ENTER A STOCK SYMBOL</h2>
+                <!-- {% if not_found %} -->
+                <!-- <div class="alert alert-danger" style="color: red;" role="alert">
+                    Stock Symbol (Ticker) Not Found. Please Enter a Valid Stock Symbol
+                </div>
+                {% endif %} -->
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="nm" placeholwder="Company Stock Symbol">
+
+            </div>
+            <div class="form-group">
+
+            </div>
+            <div class="form-group">
+                <button class="btn btn-login">PREDICT THE FUTURE</button>
+            </div>
+
+        </form>
+    </section>
+    <footer>
+        <div class="title">
+            <h3>Contact Us</h3>
+        </div>
+        <div class="popular-post">
+                <!-- <a href="#"> <i class="fa fa-map-marker fa-2x"></i>
+                        JKS, Office 206, Hubtown Solaris, Prof. NS Phadke Road,
+                        Churchgate (E) Mumbai, Maharashtra, India </a>
+                <a href="#"><i class="fa fa-envelope-o fa-2x"></i>info.bom@jks.com</a>
+                <a href="#"><i class="fa fa-phone fa-2x"></i>+91 98 19384052</a> -->
+                <p>gsagdgdi</p>
+                <p>sxhksx</p>
+                <p>khsxsx</p>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

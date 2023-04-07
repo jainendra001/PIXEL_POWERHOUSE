@@ -1,0 +1,17 @@
+body{
+    background-color: lightcyan ;
+    text-align: center;
+}
+.navbarkiimage{
+    height: 50px;
+    width: 50px;
+}
+.navbar{
+    background-color: aqua;
+}
+.predict-heading{
+    text-align: center;
+}
+/* .form-group{
+    
+} */
