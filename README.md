@@ -3,6 +3,7 @@
 # FinTech Project
 App
 https://github.com/harsimranpaswan/OneByTenPredictors
+Stock Market News Implementation going On
 
 Report
 https://docs.google.com/presentation/d/1V3PxRsMdq0WZ8Gsa0GUHfGlXwE5UK6a37hkIdmcOte0/edit?usp=sharing
