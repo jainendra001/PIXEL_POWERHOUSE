@@ -2,7 +2,7 @@
 
 # FinTech Project
 
-Latest -> Stock Market News Implemented, Stocks Glossary implemented on web, Some Calculators also added <br>
+Latest -> Stock Market News Implemented, Stocks Glossary implemented on web, Some Calculators also added,ML model trained with 100 datasets , corresponding errors resolved , predicted and actual graphs of stocks prediction was implemented for comparison <br>
 Current Status -> API Implementation for App and Web <br>
 
 App -> https://github.com/harsimranpaswan/OneByTenPredictors/tree/news <br>
