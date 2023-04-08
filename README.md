@@ -2,12 +2,11 @@
 
 # FinTech Project
 
-Latest -> Stock Market News Implemented <br>
-Current Status -> API Implementation <br>
+Latest -> Stock Market News Implemented, Stocks Glossary implemented on web, Some Calculators also added <br>
+Current Status -> API Implementation for App and Web <br>
 
 App -> https://github.com/harsimranpaswan/OneByTenPredictors <br>
-Latest -> Stock Market News Implemented <br>
-Current Status -> API Implementation <br>
+
 
 Report -> https://docs.google.com/presentation/d/1V3PxRsMdq0WZ8Gsa0GUHfGlXwE5UK6a37hkIdmcOte0/edit?usp=sharing <br>
 
