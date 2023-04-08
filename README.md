@@ -1,12 +1,15 @@
 # One By Ten Predictors
 
 # FinTech Project
-App
-https://github.com/harsimranpaswan/OneByTenPredictors
-Stock Market News Implementation going On
 
-Report
-https://docs.google.com/presentation/d/1V3PxRsMdq0WZ8Gsa0GUHfGlXwE5UK6a37hkIdmcOte0/edit?usp=sharing
+Latest -> Stock Market News Implemented <br>
+Current Status -> API Implementation <br>
+
+App -> https://github.com/harsimranpaswan/OneByTenPredictors <br>
+Latest -> Stock Market News Implemented <br>
+Current Status -> API Implementation <br>
+
+Report -> https://docs.google.com/presentation/d/1V3PxRsMdq0WZ8Gsa0GUHfGlXwE5UK6a37hkIdmcOte0/edit?usp=sharing <br>
 
 <b>Problem Statement:</b><br>
 You are an analyst at a HFT named ABC Capital and you have observed that nowadays quant algo is giving inaccurate predictions. Your boss has asked you to use sentiment analysis for predicting stock performance. You are required to create a NLP based market sentiment meter for NASDAQ stocks using social media posts of normal users. We recommend you to use twitter’s open API to do this.
