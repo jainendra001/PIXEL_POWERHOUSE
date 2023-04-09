@@ -5,7 +5,7 @@
 Latest -> Stock Market News Implemented, Stocks Glossary implemented on web, Some Calculators also added,ML model trained with 100 datasets , corresponding errors resolved , predicted and actual graphs of stocks prediction was implemented for comparison <br>
 Current Status -> API Implementation for App and Web <br>
 
-App -> https://github.com/harsimranpaswan/OneByTenPredictors/tree/news <br>
+App -> https://github.com/harsimranpaswan/OneByTenPredictors/ <br>
 
 
 Report -> https://docs.google.com/presentation/d/1V3PxRsMdq0WZ8Gsa0GUHfGlXwE5UK6a37hkIdmcOte0/edit?usp=sharing <br>
