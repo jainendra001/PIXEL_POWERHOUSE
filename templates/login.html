@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/login.css") }}">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" class="container">
+		<!-- FORM SECTION -->
+		<div class="row">
+			<!-- SIGN UP -->
+			<div class="col align-items-center flex-col sign-up">
+				<div class="form-wrapper align-items-center">
+					<div class="form sign-up">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" placeholder="Username" id="username">
+						</div>
+						<div class="input-group">
+							<i class='bx bx-mail-send'></i>
+							<input type="email" placeholder="Email" id="email">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Password" id="password">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Confirm password" id="confirmpassword">
+						</div>
+						<button id="signup" name="register">
+							Sign up
+						</button>
+						<p>
+							<span>
+								Already have an account?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Sign in here
+							</b>
+						</p>
+					</div>
+				</div>
+			
+			</div>
+			<!-- END SIGN UP -->
+			<!-- SIGN IN -->
+			<div class="col align-items-center flex-col sign-in">
+				<div class="form-wrapper align-items-center">
+					<div class="form sign-in">
+						<div class="input-group">
+							<i class='bx bx-mail-send'></i>
+							<input type="email" placeholder="Email" id="email">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Password" id="password">
+						</div>
+						<button id="login" onclick="window.location.href='index.html';">
+							Sign in
+						</button>
+						<p>
+							<b>
+								Forgot password?
+							</b>
+						</p>
+						<p>
+							<span>
+								Don't have an account?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Sign up here
+							</b>
+						</p>
+					</div>
+				</div>
+				<div class="form-wrapper">
+		
+				</div>
+			</div>
+			<!-- END SIGN IN -->
+		</div>
+		<!-- END FORM SECTION -->
+		<!-- CONTENT SECTION -->
+		<div class="row content-row">
+			<!-- SIGN IN CONTENT -->
+			<div class="col align-items-center flex-col">
+				<div class="text sign-in">
+					<h2>
+						Welcome
+					</h2>
+	
+				</div>
+				<div class="img sign-in">
+		
+				</div>
+			</div>
+			<!-- END SIGN IN CONTENT -->
+			<!-- SIGN UP CONTENT -->
+			<div class="col align-items-center flex-col">
+				<div class="img sign-up">
+				
+				</div>
+				<div class="text sign-up">
+					<h2>
+						Join with us
+					</h2>
+	
+				</div>
+			</div>
+			<!-- END SIGN UP CONTENT -->
+		</div>
+		<!-- END CONTENT SECTION -->
+	</div>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+    apiKey: "AIzaSyALFE21xwpbb0MdC98xPIJF1Vbyx6BQvus",
+    authDomain: "one-by-ten-predictors.firebaseapp.com",
+    databaseURL: "https://one-by-ten-predictors-default-rtdb.firebaseio.com",
+    projectId: "one-by-ten-predictors",
+    storageBucket: "one-by-ten-predictors.appspot.com",
+    messagingSenderId: "733476192352",
+    appId: "1:733476192352:web:2ea1d61fb7bf7625418305"
+  };
+
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    //console.log(app)
+    const auth = getAuth();
+     //----- New Registration code start	  
+	  document.getElementById("signup").addEventListener("click", function() {
+          var username =  document.getElementById("username").value;
+          var email =  document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+          
+		  //For new registration
+		  createUserWithEmailAndPassword(auth,email, password)
+		  .then((userCredential) => {
+		    // Signed in 
+		    const user = userCredential.user;
+		    console.log(user);
+		    alert("Registration successfully!!");
+		    // ...
+		  })
+		  .catch((error) => {
+		    const errorCode = error.code;
+		    const errorMessage = error.message;
+		    // ..
+		    console.log(errorMessage);
+		    alert(error);
+		  });		  		  
+	  });
+	  //----- End
+
+	  //----- Login code start	  
+	  document.getElementById("login").addEventListener("click", function() {
+		  var email =  document.getElementById("email").value;
+		  var password = document.getElementById("password").value;
+
+		  signInWithEmailAndPassword(auth, email, password)
+		  .then((userCredential) => {
+		    // Signed in 
+		    const user = userCredential.user;
+		    console.log(user);
+		    alert(user.email+" Login successfull!!!");
+            console.log(user);
+            // window.location.href = "http://127.0.0.1:5500/desgin/home.html";
+			// window.location.href=""
+		    
+		    // ...
+		  })
+              
+		  .catch((error) => {
+		    const errorCode = error.code;
+		    const errorMessage = error.message;
+		    console.log(errorMessage);
+		    alert(errorMessage);
+		  });
+          
+       	  		  
+	  });
+      
+      
+	  //----- End
+
+  </script>
+<script src="{{ url_for('static', filename="login.js",alt="") }}"></script>
+</html>
